@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What data Xgest handles, and what happens to it.">
+<title>Privacy Policy — Xgest</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="icon.png" alt="" class="brand-icon">
+      <span>Xgest</span>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="how.html">How it works</a>
+      <a href="why-private.html">Privacy</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<h1>Privacy Policy</h1>
+<p><em>What data Xgest handles, and what happens to it.</em></p>
+<p><strong>Last updated: July 16, 2026</strong></p>
+<p>This is the formal policy. If you&rsquo;d rather read why the app is built this way, see <a href="why-private.html">Privacy by architecture</a>.</p>
+<h2>The short version</h2>
+<p>Your manuals never leave your phone. Xgest reads and searches them entirely on your device. When you ask a question, only the question itself and a few paragraphs from the relevant pages are sent out to be turned into an answer — never the manual. We have no accounts, no analytics, no advertising, and no tracking, and we keep no copy of what you send.</p>
+<h2>What stays on your device</h2>
+<ul>
+<li><strong>Your manuals.</strong> Every PDF you add is copied into Xgest&rsquo;s private storage on your iPhone. It is never uploaded, never backed up to us, and never shared. There is no shared library of manuals and no way for anyone else to see yours.</li>
+<li><strong>The search index.</strong> Xgest extracts the text of each manual and indexes it on your device using Apple&rsquo;s PDFKit. Searching and ranking happen entirely on your phone.</li>
+<li><strong>Your shelf.</strong> The names of the things you own and the manuals filed under them.</li>
+</ul>
+<p>Deleting a manual in Xgest deletes the PDF and its index from your device. Deleting the app removes everything.</p>
+<h2>What leaves your device, and why</h2>
+<p>Xgest can&rsquo;t write an answer on your phone, so three things are sent to our service at <strong>api.donbon.com</strong> when you ask something:</p>
+<ol>
+<li><strong>Your question</strong>, as you typed it — so it can be translated into the wording your manual actually uses. Manuals rarely use your words: &ldquo;the orange horseshoe light&rdquo; appears nowhere in a car manual that calls it TPMS.</li>
+<li><strong>A few paragraphs</strong> from the handful of pages your phone decided are relevant — typically about five pages of the manual you&rsquo;re asking about. Your device chooses these; the whole manual is never sent.</li>
+<li><strong>A photo</strong>, only if you choose to photograph something. It is used once, to work out what the symbol or button is, and then discarded.</li>
+</ol>
+<p>That&rsquo;s everything. We don&rsquo;t send your other manuals, your shelf, your identity, your location, or your contacts, because we don&rsquo;t have them.</p>
+<h2>What we keep</h2>
+<p><strong>Nothing.</strong> Our service processes your request, returns an answer, and discards it. It stores no questions, no page text, and no photos — there is no database of what anyone asked. For monitoring, it records only that a request happened and whether it worked.</p>
+<h2>Who else sees it</h2>
+<p>To produce an answer, our service passes your question and those few paragraphs to <strong>Anthropic&rsquo;s Claude API</strong>, which generates the reply. Photos you take are sent the same way to identify what&rsquo;s in them. Anthropic processes this data to return a response; see <a href="https://www.anthropic.com/legal/privacy">Anthropic&rsquo;s privacy policy</a>.</p>
+<p>Our service runs on <strong>Cloudflare Workers</strong>. Cloudflare handles the network request; see <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare&rsquo;s privacy policy</a>.</p>
+<p>Those are the only two. We don&rsquo;t sell or share your data with anyone, for any purpose, and there is no advertising in Xgest.</p>
+<h2>Camera and photos</h2>
+<p>Xgest asks for camera access only so you can photograph a symbol, warning light, or button you don&rsquo;t recognise. The photo is sent once for identification and is not stored by us. Xgest does not read your photo library — when you pick an existing photo, iOS hands us only the one image you chose.</p>
+<h2>What Xgest does not do</h2>
+<ul>
+<li>No accounts, sign-ups, or passwords</li>
+<li>No analytics, telemetry, or crash reporting</li>
+<li>No advertising or advertising identifiers</li>
+<li>No tracking across other apps or websites</li>
+<li>No location, contacts, microphone, or health data</li>
+<li>No selling or sharing of data with third parties</li>
+</ul>
+<h2>Working offline</h2>
+<p>Reading and searching your manuals works with no connection at all, because the manual and its index are already on your phone. Only writing an answer, and identifying a photo, need the network.</p>
+<h2>Copyright</h2>
+<p>Xgest does not host, bundle, or distribute manuals. Every manual in the app is one you added yourself, for something you own, and it stays on your device.</p>
+<h2>Children</h2>
+<p>Xgest is not directed at children under 13, and we do not knowingly collect data from anyone, of any age.</p>
+<h2>Changes to this policy</h2>
+<p>If how Xgest handles data changes, this page and the date above will be updated, and the change will be noted in the app&rsquo;s release notes.</p>
+<h2>Contact</h2>
+<p>Questions about this policy? Email Don Bonaddio at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#111;&#110;&#46;&#98;&#111;&#110;&#97;&#100;&#100;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#100;&#111;&#110;&#46;&#98;&#111;&#110;&#97;&#100;&#100;&#105;&#111;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline">Your manuals, but they answer.</p>
+    <p class="umbrella"><a href="https://donstech.com">More apps from Don's Tech →</a></p>
+    <p class="meta">© 2026 Xgest · <a href="mailto:don@xgest.app">Contact</a></p>
+  </div>
+</footer>
+</body>
+</html>

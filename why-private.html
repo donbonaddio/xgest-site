@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your manuals never leave your phone. Not as a promise — as a design.">
+<title>Privacy by architecture — Xgest</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="icon.png" alt="" class="brand-icon">
+      <span>Xgest</span>
+    </a>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="how.html">How it works</a>
+      <a href="why-private.html">Privacy</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+<h1>Privacy by architecture</h1>
+<p><em>Your manuals never leave your phone. Not as a promise — as a design.</em></p>
+<p>&ldquo;We take your privacy seriously&rdquo; is what companies say when the architecture doesn&rsquo;t say it for them. So here&rsquo;s the architecture.</p>
+<h2>The manual never goes anywhere</h2>
+<p>When you add a manual, Xgest reads it on your iPhone using PDFKit — Apple&rsquo;s PDF framework, built into the OS. The text is extracted, indexed, and stored in the app&rsquo;s private container on your device.</p>
+<p>There is no upload. There is no copy on a server. There is no shared library of manuals, and there is no way for anyone else — including me — to see what&rsquo;s on your shelf. Delete the app and it&rsquo;s gone, because there was never anywhere else for it to be.</p>
+<p>This isn&rsquo;t restraint. It&rsquo;s cheaper and faster this way, and it means there&rsquo;s no honeypot to breach.</p>
+<h2>What actually goes out, and why it&rsquo;s small</h2>
+<p>Xgest can&rsquo;t write an answer on your phone. So when you ask something, three things go to our service at <strong>api.donbon.com</strong>:</p>
+<ul>
+<li><strong>Your question</strong>, as you typed it.</li>
+<li><strong>About five pages&rsquo; worth of paragraphs</strong> — the ones your phone decided are relevant.</li>
+<li><strong>A photo</strong>, only if you chose to take one.</li>
+</ul>
+<p>Concretely: a question about the Honda HR-V manual sends roughly 1,700 tokens. Sending the whole manual would be about 162,000. That&rsquo;s <strong>94× less</strong>, and it&rsquo;s not a coincidence — the retrieval happens on your device precisely so the rest never has to move.</p>
+<p>Nothing is retained. The request is answered and discarded. There&rsquo;s no database of what anyone asked, because there&rsquo;s no database.</p>
+<h2>Who touches it</h2>
+<p>Two companies, briefly:</p>
+<ul>
+<li><strong>Anthropic</strong> — turns your question and those paragraphs into an answer. <a href="https://www.anthropic.com/legal/privacy">Their privacy policy</a></li>
+<li><strong>Cloudflare</strong> — runs the service that passes it along. <a href="https://www.cloudflare.com/privacypolicy/">Their privacy policy</a></li>
+</ul>
+<p>That&rsquo;s the whole list. No analytics. No ads. No trackers. No accounts — you don&rsquo;t have a login here because there&rsquo;s nothing to log in to.</p>
+<h2>Why the citation is a privacy feature too</h2>
+<p>Every answer cites the page it came from, and tapping it opens the real PDF <strong>from your device</strong>. That page never travelled anywhere. The verification step is entirely local — which is the same reason it&rsquo;s instant, and works with no signal.</p>
+<h2>The architecture in one line</h2>
+<p>If our server disappeared tomorrow, you could still open every manual you own and search it. Because it&rsquo;s on your phone, not ours.</p>
+<hr />
+<p><em>If &ldquo;we take privacy seriously&rdquo; makes you skeptical, you&rsquo;re my kind of user.</em></p>
+<p><a href="privacy.html">Read the full privacy policy</a> · <a href="how.html">How it works</a> · <a href="index.html">Back to home</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline">Your manuals, but they answer.</p>
+    <p class="umbrella"><a href="https://donstech.com">More apps from Don's Tech →</a></p>
+    <p class="meta">© 2026 Xgest · <a href="mailto:don@xgest.app">Contact</a></p>
+  </div>
+</footer>
+</body>
+</html>
