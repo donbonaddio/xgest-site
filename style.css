@@ -212,6 +212,34 @@ main > hr + p + p {
     font-size: 1.05rem;
 }
 
+/* ---- Demo video ---- */
+
+/* Portrait screen recording shown at phone width, centred. Rounded and
+ * lightly framed so it reads as "the app on a phone" against the white page,
+ * echoing the app-icon treatment in the header. Autoplays muted + looped. */
+.demo {
+    margin: 2rem auto 2.5rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.demo video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+    background: var(--bg);
+}
+
+.demo figcaption {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--fg-muted);
+    line-height: 1.45;
+}
+
 /* ---- Links ---- */
 
 a {
