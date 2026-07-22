@@ -240,21 +240,34 @@ main > hr + p + p {
     line-height: 1.45;
 }
 
-/* Placeholder for a clip not yet recorded. Same footprint as a real .demo
- * video so the page doesn't reflow when the clip drops in — just swap the
- * .demo-placeholder div for a <video>. Portrait phone aspect (≈19.5:9). */
+/* Placeholder for a clip not yet recorded. A compact, clearly-intentional card
+ * (not the full phone height — an empty tall box reads as broken). A small
+ * amber play glyph marks it as "a video goes here." Swapped for a <video>
+ * once the clip lands. */
 .demo.pending .demo-placeholder {
     width: 100%;
-    aspect-ratio: 300 / 650;
-    border-radius: 22px;
+    aspect-ratio: 3 / 4;
+    border-radius: 18px;
     border: 1px dashed var(--border);
     background: var(--surface);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.15rem;
+    gap: 0.1rem;
     color: var(--fg-tertiary);
+}
+
+/* Amber play triangle above the label. */
+.demo.pending .demo-placeholder::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 0 11px 18px;
+    border-color: transparent transparent transparent var(--accent);
+    opacity: 0.75;
+    margin-bottom: 0.7rem;
 }
 
 .demo.pending .demo-label {
