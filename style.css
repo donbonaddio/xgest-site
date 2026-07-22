@@ -240,6 +240,49 @@ main > hr + p + p {
     line-height: 1.45;
 }
 
+/* Placeholder for a clip not yet recorded. Same footprint as a real .demo
+ * video so the page doesn't reflow when the clip drops in — just swap the
+ * .demo-placeholder div for a <video>. Portrait phone aspect (≈19.5:9). */
+.demo.pending .demo-placeholder {
+    width: 100%;
+    aspect-ratio: 300 / 650;
+    border-radius: 22px;
+    border: 1px dashed var(--border);
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    color: var(--fg-tertiary);
+}
+
+.demo.pending .demo-label {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    color: var(--fg-muted);
+}
+
+.demo.pending .demo-note {
+    font-size: 0.85rem;
+}
+
+/* Small amber pill marking a Plus-only feature in a heading. */
+.plus-tag {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    padding: 0.1em 0.55em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 999px;
+}
+
 /* ---- Links ---- */
 
 a {
