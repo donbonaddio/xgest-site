@@ -443,5 +443,12 @@ th {
 }
 .cta-download-wrap {
     text-align: center;
-    margin: 1.75rem 0;
+    margin: 1.75rem 0 0.6rem;
+}
+/* Small "it's free" reassurance under the download button. */
+.cta-note {
+    text-align: center;
+    margin: 0 0 1.75rem;
+    font-size: 0.92rem;
+    color: var(--fg-muted);
 }
